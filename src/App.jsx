@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { RadioBrowserApi } from 'radio-browser-api';
+import Navbar from './Components/Navbar';
+import './App.css';
 
 
 
@@ -29,9 +31,8 @@ function App() {
    
 
   return (
-    <div className="">
-      
-
+    <div className="radio-app">    
+        <Navbar />
 
     </div>
   );
