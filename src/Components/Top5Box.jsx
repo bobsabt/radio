@@ -1,20 +1,22 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const Top5Box = ({ logo, name, votes}) => {
+const Top5Box = ({ place, logo, name}) => {
   return (
-    <div className='top5box'>
-        <img src={logo} alt="logo"/>
-        <p>{name}</p>
-        <p>{votes}</p>
+    <div className="top5box">
+        <p className="position">{place}</p>
+        <div className="img-container">
+          <img src={logo} alt="logo" />
+        </div>
+        <p className="station-name">{name}</p>
     </div>
-  )
-}
-
-Top5Box.propTypes = {
-    logo: PropTypes.string, 
-    name: PropTypes.string, 
-    votes: PropTypes.number, 
+  );
 };
 
+Top5Box.propTypes = {
+    place: PropTypes.number,
+  logo: PropTypes.string,
+  name: PropTypes.string,
+ 
+};
 
-export default Top5Box
+export default Top5Box;
